@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cedar Careers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://kit.fontawesome.com/beb8ce930b.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="index.html">Cedar Careers</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner2"></div>
+  <div class="about">
+ <div class="content">
+    <section id="service">
+
+        <main>
+          <h1>Our Service</h1>
+          <p>Cedar Careers works with job seekers to help them find the right job for their skills and experience. 
+              We have a variety of jobs available, and there are full-time, part-time, and temporary positions available. 
+              And, as one of the leading staffing agencies in Southern Utah, Cedar Careers provides employment services and workforce 
+              solutions to employers throughout our community. Contact us today to get started on finding the right fit for you.</p>
+            <br>
+          <p><h1>Package Information</h1> </p>
+          <dl>
+              <dt><h3>Resume critique</h3></dt>
+              <dd>Resume critique provides 4 package types with one editing session with the base package up to 4 sesions with the highest.</dd><br>
+
+              <dt><h3>Interview Skills Assessment</h3></dt>
+              <dd>Interview skills Asssessmnet provides 4 package types with one session with the base package up to 4 sesions with the highest. Allows for the practice of real world interview scenarios.</dd><br>
+
+              <dt><h3>Live Workshops</h3></dt>
+              <dd>Live workshops provides 4 package types with one session with the base package up to 4 sesions with the highest. Live workshops teach applicable skills of how to succed on the job and in the work place. </dd><br>
+          </dl>
+          
+          <br>
+
+
+          <table class="table">
+          
+            <tr>
+                  <th>Product</th>
+                  <th>Package 1</th>
+                  <th>Package 2</th>
+                  <th>Package 3</th>
+                  <th>Package 4</th>
+              </tr>
+              <tr>
+                  <th>Resume critique</th>
+                  <td>$50</td>
+                  <td>$100</td>
+                  <td>$150</td>
+                  <td>$200</td>
+              </tr>
+              <tr>
+                  <th>Interview Skills Assessment</th>
+                  <td>$25</td>
+                  <td>$50</td>
+                  <td>$75</td>
+                  <td>$100</td>
+              </tr>
+              <tr>
+                  <th>Live Workshops</th>
+                  <td>$25</td>
+                  <td>$50</td>
+                  <td>$75</td>
+                  <td>$100</td>
+              </tr> 
+          </table>
+
+          <br>
+        </main>
+
+    </section>
+
+
+  </div>
+  <footer>
+    <div class="footer-content">
+      <h3>Cedar Careers</h3>
+      <p> We Hope to See you Soon!</p>
+      <ul class="social">
+        <li><a href="https://www.facebook.com/login.php/"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJyZWRpcmVjdF9hZnRlcl9sb2dpbiI6Imh0dHBzOi8vZGV2ZWxvcGVyLnR3aXR0ZXIuY29tL2VuL2RvY3MvYXV0aGVudGljYXRpb24vZ3VpZGVzL2xvZy1pbi13aXRoLXR3aXR0ZXIifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://accounts.google.com/v3/signin/identifier?dsh=S1091037399%3A1670702081395468&continue=http%3A%2F%2Fdrive.google.com%2F%3Futm_source%3Den&ltmpl=drive&passive=true&service=wise&usp=gtd&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh5nQ1X8jbt_RHVdWdDOHUOElYcYWLMe8wz7CyqjzRKTMXO_DSCDHzEV7i8I8WtRlxVAXX526Q"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="https://www.youtube.com/?login&themeRefresh=1"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.linkedin.com/home"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p> All copyrights are reserved under privacy and policy distribution &copy; 2022; Made by: <span><a href="portj.html">Jake Wright, </a></span></p>
+
+    </div>
+  </footer>
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

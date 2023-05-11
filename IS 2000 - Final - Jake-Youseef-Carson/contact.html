@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cedar Careers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://kit.fontawesome.com/beb8ce930b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="index.html">Cedar Careers</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner3"></div>
+  <div class="about">
+    <div class="content">
+    <section id="contact">
+
+      <div id="contact-info">
+        <h2>Contact us today for a free consultation, so you can finally start a career you enjoy!</h2><br>
+        <h3 class="mobile tel-link">Call at:<a href="tel:4352837460">(435) 283-7460</a></h4>
+        <h3 class="tablet-desktop tel-num">Call at: (435) 283-7460</h4>
+        <br>
+        <h3 class="contact-email-link">Or email us: <a href="mailto:cedarcareers@gmail.com">cedarcareers@gmail.com</a></h4>
+      </div><br>
+      <br>
+
+      <!--Form for Mobile-->
+      <div id="form" class="mobile">
+        <h2>Fill out the form below to start your free consulatation!</h2>
+
+          <fieldset id="field1">
+            <legend>Customer Information</legend>
+            <div id="customer">
+              <label for="fName">First Name:</label>
+              <input type="text" name="fName" id="fName" required>
+              
+              <label for="lName">Last Name:</label>
+              <input type="text" name="lName" id="lName" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" required>
+
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div id="education">
+              <legend>Educational Background</legend>
+              <form id="education-info">
+                <label for="ged"><input type="radio" id="ged" name="education-info" value="ged">High School/GED</label>
+
+                <label for="associates"><input type="radio" id="associates" name="education-info" value="associates">Associates Degree</label>
+
+                <label for="bachelors"><input type="radio" id="bachelors" name="education-info" value="bachelors">Bachelors Degree</label>
+
+                <label for="masters"><input type="radio" id="masters" name="education-info" value="masters">Masters Degree</label>
+
+                <label for="other"><input type="radio" id="other" name="education-info" value="other">Other education</label>
+              </form>
+            </div>
+          </fieldset><br>
+
+          <fieldset>
+            <legend>Reference</legend>
+            <label for="reference">How did you hear about us?</label>
+            <select name="reference" id="reference">
+              <option value="family">Family</option>
+              <option value="friend">Friend</option>
+              <option value="social">Social Media</option>
+              <option value="advert">Advertisement</option>
+              <option value="other">Other</option>
+            </select><br>
+
+            <label for="questions"> What specific questions do you have?</label>
+            <textarea id="questions" name="questions" rows="5" cols="30"></textarea>
+          </fieldset>
+
+          <input type="submit" id="submit" value="Submit" class="btn">
+        </form>
+      </div>
+    </div>
+
+      <!--Form for Tablet-Desktop-->
+      <div id="form" class="tablet-desktop">
+        <h2>Fill out the form below to start your free consulatation!</h2>
+
+        <form class="form-grid">
+
+          <fieldset id="field1">
+            <legend>Customer Information</legend>
+            <div id="customer">
+              <label for="fName">First Name:</label>
+              <input type="text" name="fName" id="fName" required>
+              
+              <label for="lName">Last Name:</label>
+              <input type="text" name="lName" id="lName" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" required>
+
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div id="education">
+              <legend>Educational Background</legend>
+              <form id="education-info">
+                <label for="ged"><input type="radio" id="ged" name="education-info" value="ged">High School/GED</label>
+
+                <label for="associates"><input type="radio" id="associates" name="education-info" value="associates">Associates Degree</label>
+
+                <label for="bachelors"><input type="radio" id="bachelors" name="education-info" value="bachelors">Bachelors Degree</label>
+
+                <label for="masters"><input type="radio" id="masters" name="education-info" value="masters">Masters Degree</label>
+
+                <label for="other"><input type="radio" id="other" name="education-info" value="other">Other education</label>
+              </form>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Reference</legend>
+            <label for="reference">How did you hear about us?</label>
+            <select name="reference" id="reference">
+              <option value="family">Family</option>
+              <option value="friend">Friend</option>
+              <option value="social">Social Media</option>
+              <option value="advert">Advertisement</option>
+              <option value="other">Other</option>
+            </select><br>
+
+            <label for="questions"> What specific questions do you have?</label>
+            <textarea id="questions" name="questions" rows="5" cols="80"></textarea>
+          </fieldset>
+
+          <input type="submit" id="submit" value="Submit" class="btn">
+        </form>
+      </div>
+    </div>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Cedar Careers</h3>
+      <p> We Hope to See you Soon!</p>
+      <ul class="social">
+        <li><a href="https://www.facebook.com/login.php/"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJyZWRpcmVjdF9hZnRlcl9sb2dpbiI6Imh0dHBzOi8vZGV2ZWxvcGVyLnR3aXR0ZXIuY29tL2VuL2RvY3MvYXV0aGVudGljYXRpb24vZ3VpZGVzL2xvZy1pbi13aXRoLXR3aXR0ZXIifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://accounts.google.com/v3/signin/identifier?dsh=S1091037399%3A1670702081395468&continue=http%3A%2F%2Fdrive.google.com%2F%3Futm_source%3Den&ltmpl=drive&passive=true&service=wise&usp=gtd&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh5nQ1X8jbt_RHVdWdDOHUOElYcYWLMe8wz7CyqjzRKTMXO_DSCDHzEV7i8I8WtRlxVAXX526Q"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="https://www.youtube.com/?login&themeRefresh=1"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.linkedin.com/home"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p> All copyrights are reserved under privacy and policy distribution &copy; 2022; Made by: <span><a href="portc.html">Carson Freeman,</a> under supervision of Prof. Harris</span></p>
+
+    </div>
+  </footer>
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>

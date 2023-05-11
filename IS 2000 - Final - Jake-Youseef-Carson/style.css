@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-device-width: 629px) and (orientation: portrait){
+  .tablet-desktop {
+    display: none;
+  }
+
+  video {
+    display:none
+    }
+
+  .tel-num {
+    display: none;
+  }
+}
+
+/*table*/
+.table{
+  display: none;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0px 50px;
+}
+.navbar{
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  padding: 10px 0;
+  background: black;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #007bff;
+}
+
+.navbar-nav {
+  padding: 1%;
+}
+
+/* Banner Photos */
+.banner{
+  height: 100vh;
+  background: url("pexels-fauxels.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banner2{
+  height: 100vh;
+  background: url("pexels-emily-ranquist.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banner3{
+  height: 100vh;
+  background: url("pexels-mart-production.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banner4 {
+  height: 100vh;
+  background: url("suu.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banner5 {
+  height: 100vh;
+  background: url("nature2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banner6 {
+  height: 100vh;
+  background: url("horus-ph1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banner7 {
+  height: 100vh;
+  background: url("international.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about{
+  padding-top: 40px;
+}
+.about .title{
+  font-size: 35px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.icon.cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.navbar.sticky .icon.cancel-btn{
+  top: 10px;
+}
+
+#suu-logo {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#barchart_material, #chart-text {
+  display: none;
+}
+
+#contact-info {
+  text-align: center;
+}
+
+.tel-link a{
+  text-decoration: none;
+  color: black;
+}
+
+.contact-email-link a{
+  text-decoration: none;
+  color: black;
+}
+
+#form {
+  padding: 1%;
+  background-color: rgb(213, 213, 213);
+}
+
+#form h2 {
+  text-align: center;
+}
+
+fieldset {
+  padding: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#field1 {
+  width: 80%;
+  text-align: center;
+}
+
+#field1 label {
+  padding: 2%;
+  display: block;
+}
+
+#education {
+  margin-top: 0;
+  padding-top: 5%;
+}
+
+#reference {
+  display: block;
+}
+
+#questions {
+  display: block;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+.btn {
+  color: white;
+  display: block;
+  padding: 1%;
+  background-color: #676767;
+  font-size: 1.05em;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+
+#imgc {
+  width: 90%;
+  height: 90%;
+  padding: 1%;
+}
+
+#imgj, #imgy {
+  width: auto;
+  height: auto;
+  padding: 0 4%;
+}
+
+.cardc, .cardj, .cardy {
+  padding: 0 2%;
+}
+
+#principles h1, #principles h3 {
+  color: #007bff;
+}
+
+.grid-container {
+  color: #007bff;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5px;
+  padding: 2%;
+}
+
+.grid-item {
+  text-align: center;
+  font-size: 14pt;
+  padding: 2%;
+}
+
+/*Style rule for Tablet*/
+@media(min-width:630px){
+  .mobile {
+    display: none;
+  }
+
+  .tablet-desktop {
+    display: block;
+  }
+
+  #contact-info {
+    text-align: center;
+  }
+
+  video {
+    display: block;
+  }
+  
+  .contact-email-link a:hover {
+    color: blue;
+  }
+
+  #imgc, #imgj, #imgy {
+    width: 500px;
+    height: 400px;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  #customer {
+    float: left;
+    padding-left: 5%;
+  }
+
+  #field1 {
+   width: 100%;
+  }
+
+  #education {
+    margin-left: 300px;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  #reference {
+    width: 46%;
+  }
+
+  #form h2 {
+    text-align: left;
+  }
+}
+
+/*Style rule for desktop*/
+@media(min-width:1015px){
+  header{
+    width:50%;
+    float: left;
+    padding-bottom: 0;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  
+  .table{
+    display: block;
+  }
+
+  #barchart_material, #barchart-text {
+    display: block;
+  }
+}
+
+/*Style for Laptops*/
+@media (max-width: 868px) {
+  body.disabledScroll{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  .icon.cancel-btn{
+    display: none;
+  }
+  .icon.cancel-btn.show{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #000000;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky .menu-list{
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+  .navbar .menu-list.active{
+    clip-path: circle(75%);
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+  }
+}
+/*Style Rules for the footer*/
+footer{
+  background: #111;
+  width: 100%;
+  height: auto;
+  font-family: sans-serif;
+  color: #fff;
+  padding-top: 40px;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+  padding: 0;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  padding: 0;
+}
+.social{
+  list-style: none;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.social li{
+  margin: 0 10px;
+}
+.social a{
+  text-decoration: none;
+  color: #fff;
+}
+.social a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+  color: #fff;
+}
+.social a:hover{
+  color: #007bff;
+}
+.footer-bottom{
+  background: #000;
+  padding: 20px 0;
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+.footer-bottom p{
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  margin: 1%;
+}
+.footer-bottom a{
+  text-decoration: none;
+  color: #fff;
+}
+/* Backup button settings
+.container-btn button{
+  display: grid;
+  background-color: #555555;
+  color: #fff;
+  padding: 0 210px;
+  position: center;
+  text-decoration: none;
+}*/
+.container-btn{
+  justify-content: center;
+  
+}
+.container-btn button a{
+  text-decoration: none;
+  color: #fff;
+}
+.container-btn a:hover{
+  color: #007bff;
+  transition: all .5s;
+}
+.button5 {
+  background-color: #555555;
+  color: #fff;
+  padding: 0 12px;
+  position :center;
+  width: 100%;
+}
+.asideturn{
+  background-color:rgb(254, 202, 134);
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #000;
+}
+.asideturn2{
+  background-color:rgb(79, 192, 240);
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #000;
+}
+#centerit{
+  text-align: center;
+}
+/* About us  Youssef 12/7/2022*/
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  
+}
+/*Video*/
+.content video{
+  background-color: black;
+  height: 50%;
+  width: 50%;
+  margin-left: 27%;
+}
+
+
+
