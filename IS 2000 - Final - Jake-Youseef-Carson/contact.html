@@ -8,6 +8,30 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://kit.fontawesome.com/beb8ce930b.js" crossorigin="anonymous"></script>
+    <script>
+        fetch('https://example.com/api/data', {
+  method: 'POST', // or 'GET', 'PUT', 'DELETE', etc. depending on your use case
+  headers: {
+    'Content-Type': 'application/json', // set the appropriate Content-Type header
+    // add any other headers your server requires, e.g., authentication tokens
+  },
+  body: JSON.stringify({ key1: 'value1', key2: 'value2' }) // include any payload data
+})
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json(); // parse response as JSON
+  })
+  .then(data => {
+    // process the response data
+    console.log(data);
+  })
+  .catch(error => {
+    // handle any errors
+    console.error('Error:', error);
+  });
+    </script>
 </head>
 <body>
   <nav class="navbar">
